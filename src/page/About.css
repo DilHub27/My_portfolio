@@ -1,0 +1,145 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:'popping','sans-serif';
+} 
+
+
+
+
+ 
+:root{
+
+    --bg-color:#081b29;
+    --second-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+}
+
+
+
+.about-me{
+font-size: 30px;
+cursor: pointer;
+margin-top: 30px;
+
+
+
+}
+.about-me:hover{
+    color: aqua;
+}
+
+
+
+
+.mypicture{
+margin-top: 50px;
+display: flex;
+justify-items: center;
+align-items: center;
+flex-direction: column;
+gap: 5rem;
+
+}
+
+.cecale{
+
+
+width: 300px;
+height: 300px;
+border-radius:50%;
+justify-content: center;
+align-items: center;
+
+
+
+}
+
+
+
+.cecale img{
+   
+width: 300px;
+border-radius:50%;
+border: .2rem solid var(--main-color);
+height: 300px;
+
+}
+
+
+.cecale .spina{
+   
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%) rotate(0);
+width:301px;
+height: 302px;
+border-radius:50%;
+border-top:.5rem solid var(--second-bg-color);
+border-bottom:.5rem solid var(--second-bg-color);
+border-left:.5rem solid blue;
+border-right:.5rem solid blue;
+margin-top: -148px;
+margin-left: -150px;
+
+}
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .spina {
+      animation: spina-spin infinite 20s linear;
+    }
+
+    @keyframes spina-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+    }
+}
+
+
+.explain-me{
+
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 18px;
+
+}
+
+.my-info{
+
+text-align: center;
+
+}
+table{
+text-align: center;
+width: 90%;
+margin-top: 20px;
+margin-left: 56px;
+position: absolute;
+
+
+}
+
+table,th, tr ,td{
+border: 1px solid blue;
+border-collapse: collapse;
+padding: 20px;
+font-size: 15px;
+
+
+}

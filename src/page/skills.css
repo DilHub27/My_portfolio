@@ -1,0 +1,157 @@
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:'popping','sans-serif';
+} 
+
+ 
+:root{
+
+    --bg-color:#081b29;
+    --second-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+}
+
+.main-slills{
+
+    margin-left: 100px;
+}
+.topic-name{
+color: aliceblue;
+padding: 10px;
+font-size: 20px;
+
+}
+
+.tecSkill{
+float: left;
+margin-top: 80px;
+width: 50%;
+
+
+}
+
+.softSkill{
+    margin-top: 80px;
+    float: left;
+    width: 50%;
+   
+}
+
+.tchbody p{
+
+padding: 30px;
+font-size: 15px;
+cursor: pointer;
+
+}
+
+.softbody p {
+padding: 30px;
+font-size: 15px;
+cursor: pointer;
+
+
+
+}
+.tchbody{
+border: 2px solid var(--main-color);
+width: 500px;
+height: 500px;
+position: absolute;
+
+
+
+}
+.tchbody::before{
+content: '';
+position:absolute;
+width: 0;
+height: 500px;
+background: #2a4652 ;
+top: 50%;
+left: 50%;
+translate: -50% -50%;
+opacity: 0.3;
+ transition: .8s;
+ cursor: pointer;
+}
+
+.tchbody:hover::before{
+width: 500px;
+
+   
+}
+
+
+.softbody{
+    border: 2px solid var(--main-color);
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin-right: 10px;
+ 
+    }
+    .softbody::before{
+        content: '';
+        position:absolute;
+        width: 0;
+        height: 500px;
+        background: #2a4652 ;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        opacity: 0.3;
+         transition: .8s;
+        cursor: pointer;
+        }
+
+ .softbody:hover::before{
+    width: 500px;
+            
+  }
+
+
+
+
+
+ .main-prasentage{
+
+    width: 400px;
+    height: 10px;
+    border:1.5px solid #6cba12;
+    cursor: pointer;
+    border-radius:  5px 5px 5px 5px;
+
+   
+ }
+  .prasentage1:nth-child(1),.prasentage2:nth-child(1),.prasentage3:nth-child(1),.prasentage4:nth-child(1),.prasentage5:nth-child(1),.prasentage6:nth-child(1),.prasentage7:nth-child(1),.prasentage8:nth-child(1),.prasentage9:nth-child(1),.prasentage10:nth-child(1){
+
+    color: rgb(81, 255, 0);
+    height: 7px;
+     
+       background-color: rgb(208, 122, 239);
+       
+    }
+
+
+    
+
+    
+
+        
+ .prsen{
+margin-left: 405px;
+font-size: 16px;
+margin-top: 10px;
+ }
+
+
+

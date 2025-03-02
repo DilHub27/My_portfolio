@@ -1,0 +1,101 @@
+
+.navebar .active p {
+    color: var(--main-color);
+   
+   
+}
+
+
+
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:'popping','sans-serif';
+} 
+
+ 
+:root{
+
+    --bg-color:#081b29;
+    --second-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+}
+
+html{
+
+font-size: 62.5%;
+overflow:scroll;
+
+
+}
+body{
+
+background: var(--bg-color);
+color: var(--text-color);
+
+}
+
+
+header{
+
+    position: fixed;
+ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color:var(--second-bg-color);
+    opacity: .7;
+    transition: 1s;
+
+display:flex;
+justify-content: space-between;
+z-index: 100%;
+
+}
+
+header:hover{
+    background-color:var(--bg-color);
+    opacity: 2;
+}
+
+.logo{
+font-size: 2.5rem;
+font-weight: 600;
+color: rgb(236, 236, 236);
+cursor: pointer;
+}
+
+
+
+.navebar p {
+
+font-size: 2rem;
+color: var(--text-color);
+font-weight: 500;
+margin-left: 3.5rem;
+transition: .3s;
+float: left;
+
+}
+
+
+.navebar p:hover{
+    color: var(--main-color);
+}
+
+#menu-icon{
+ font-size: 3.6rem;
+color: var(--text-color);
+cursor: pointer;
+display: none;
+
+
+} 
