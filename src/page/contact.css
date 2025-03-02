@@ -1,7 +1,4 @@
-
-
-*{
-
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,93 +6,71 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family:'popping','sans-serif';
-} 
-
-
-
-
- 
-:root{
-
-    --bg-color:#081b29;
-    --second-bg-color:#112e42;
-    --text-color:#ededed;
-    --main-color:#00abf0;
+    font-family: 'Poppins', 'sans-serif';
 }
 
-
-.my-name{
-margin-top: 150px;
-margin-left: 50px;
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
 }
 
-
-
-.contant{
-
-font-size: 20px;
-padding: 10px;
-
-
-
+.my-name {
+    margin-top: 150px;
+    margin-left: 50px;
 }
-.tab{
-width: 500px;
-height: 25px;
-font-size: 15px;
-border: 1px solid rgb(80, 69, 201);
-background-color:var(--second-bg-color);
-color: rgb(231, 231, 231);
-font-family: 'Times New Roman', Times, serif;
-margin-left: 80px;
 
+.contant {
+    font-size: 20px;
+    padding: 10px;
 }
-.profile{
-width: 30px;
-position: absolute;
 
-
+.tab {
+    width: 500px;
+    height: 25px;
+    font-size: 15px;
+    border: 1px solid rgb(80, 69, 201);
+    background-color: var(--second-bg-color);
+    color: rgb(231, 231, 231);
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 80px;
 }
-.dtail{
-margin-top: 10px;
+
+.profile {
+    width: 30px;
+    position: absolute;
+}
+
+.dtail {
+    margin-top: 10px;
     margin-left: 45px;
 }
 
-.massage{
-
-
-margin-left: 800px;
-margin-top: -300px;
-
-
+.massage {
+    margin-left: 800px;
+    margin-top: -300px;
 }
-.send-massage{
-  
+
+.send-massage {
     background-color: var(--second-bg-color);
     width: 450px;
     height: 400px;
     box-shadow: 20px 40px 50px rgb(10, 11, 15);
-    border-radius:  10px 10px 10px 10px;
-  
+    border-radius: 10px 10px 10px 10px;
 }
 
-
-
-.contact-box{
-padding: 5px;
-margin-left: 30px;
-margin-top: 10px;
-justify-content: center;
-border: 1px solid #00abf0;
-width: 300px;
-background-color: #a19ea5;
-
-
+.contact-box {
+    padding: 5px;
+    margin-left: 30px;
+    margin-top: 10px;
+    justify-content: center;
+    border: 1px solid #00abf0;
+    width: 300px;
+    background-color: #a19ea5;
 }
 
-.contact-text-box{
-
+.contact-text-box {
     padding: 40px;
     margin-left: 30px;
     margin-top: 10px;
@@ -103,20 +78,132 @@ background-color: #a19ea5;
     border: 1px solid #00abf0;
     width: 300px;
     background-color: #a19ea5;
-
-
 }
-.submit{
 
-margin-left: 20px;
-width: 60px;
-border-radius: 5px 5px 5px 5px;
-cursor: pointer;
-
+.submit {
+    margin-left: 20px;
+    width: 60px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
 }
- h2,h3{
+
+h2, h3 {
     font-size: 16px;
-   color: #4e22d1;
-   margin-top: 10px;
-   margin-left: 10px;
+    color: #dfdbeb;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .my-name {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .contant {
+        font-size: 18px;
+    }
+
+    .tab {
+        width: 100%;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .profile {
+        width: 20px;
+    }
+
+    .massage {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .send-massage {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .contact-box,
+    .contact-text-box {
+        width: 90%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .submit {
+        width: 100px;
+    }
+
+    h2, h3 {
+        font-size: 14px;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .my-name {
+        margin-left: 20px;
+        margin-top: 80px;
+    }
+
+    .tab {
+        width: 80%;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .massage {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .send-massage {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .contact-box,
+    .contact-text-box {
+        width: 80%;
+    }
+
+    .submit {
+        width: 100px;
+    }
+
+    h2, h3 {
+        font-size: 14px;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    .my-name {
+        margin-left: 50px;
+    }
+
+    .tab {
+        width: 500px;
+    }
+
+    .massage {
+        margin-left: 800px;
+        margin-top: -300px;
+    }
+
+    .send-massage {
+        width: 450px;
+    }
+
+    .contact-box,
+    .contact-text-box {
+        width: 300px;
+    }
 }

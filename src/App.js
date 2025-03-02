@@ -31,9 +31,9 @@ function App() {
   
 <Routes>
 
-{!loding && (<Route exact path=''element={<HomePage/>}/>   )}
+{!loding && (<Route exact path=''element={<HomePage/>}/>  )} 
 
-  <Route exact path='/HomePage'element={<HomePage/>} />
+  <Route exact path='/HomePage'element={<HomePage/>} /> 
  
   <Route path ='/AboutPage'element={<AboutPage/>}/>
   
