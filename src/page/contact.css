@@ -37,10 +37,7 @@
     margin-left: 80px;
 }
 
-.profile {
-    width: 30px;
-    position: absolute;
-}
+
 
 .dtail {
     margin-top: 10px;
@@ -206,4 +203,6 @@ h2, h3 {
     .contact-text-box {
         width: 300px;
     }
+
 }
+

@@ -8,7 +8,7 @@ export default function AboutPage() {
       <div className='mypicture'>
         <h1 className='about-me'>About Me</h1>
         <div className='cecale'>
-    <img src='4.jpg' className='image' alt='Profile' />
+    <div className='image' />
         </div>
         <div className='explain-me'>
           <p>I am Dilshan Udaraka Ranathunga, currently pursuing a BSc (Hons) in Information Systems at Rajarata University of Sri Lanka.</p>

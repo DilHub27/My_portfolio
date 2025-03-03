@@ -1,9 +1,6 @@
 import React from 'react'
 import Home from '../Component/Home'
 import'./contact.css'
-import { Form } from 'react-router-dom'
-
-
 
 
 export default function ContactPage() {
@@ -19,22 +16,22 @@ export default function ContactPage() {
 
   
     <div> 
-     <div className='contant'><span><img src='./profile.png' className='profile'/> <p className='dtail'>Name</p>  </span></div>
+     <div className='contant'> <p className='dtail'>Name</p>  </div>
     <div className='tab'> <p> P.H.DILSHAN UDARAKA  RANATHUNGA </p></div>
     </div>
 
     <div>
-    <div className='contant'><span><img src='./placeholder.png' className='profile'/> <p className='dtail'>Addrasess</p>  </span></div>
+    <div className='contant'> <p className='dtail'>Addrasess</p> </div>
     <div className='tab' >NO.45, SINHASIRIPURA, MADURUKATIYA, MONARAGALA</div>
     </div>
 
     <div>
-    <div className='contant'><span><img src='./gmail.png' className='profile'/> <p className='dtail'>Email</p>  </span></div>
+    <div className='contant'><p className='dtail'>Email</p> </div>
     <div className='tab' > durdilshanudara29@gmail.com </div>
     </div>
    
     <div>
-    <div className='contant'><span><img src='./phone-call.png' className='profile'/> <p className='dtail'>Contact number</p>  </span></div>
+    <div className='contant'> <p className='dtail'>Contact number</p>  </div>
     <div className='tab'>0728185088</div>
     </div>
     </div>
