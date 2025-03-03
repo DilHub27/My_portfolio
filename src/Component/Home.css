@@ -1,14 +1,4 @@
-
-.navebar .active p {
-    color: var(--main-color);
-   
-   
-}
-
-
-
-*{
-   
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,86 +6,112 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family:'popping','sans-serif';
+    font-family: 'Poppins', sans-serif;
 } 
 
- 
-:root{
-
-    --bg-color:#081b29;
-    --second-bg-color:#112e42;
-    --text-color:#ededed;
-    --main-color:#00abf0;
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
 }
 
-html{
-
-font-size: 62.5%;
-overflow:scroll;
-
-
-}
-body{
-
-background: var(--bg-color);
-color: var(--text-color);
-
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 
-header{
 
+.header {
     position: fixed;
- 
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
-    background-color:var(--second-bg-color);
-    opacity: .7;
-    transition: 1s;
-
-display:flex;
-justify-content: space-between;
-z-index: 100%;
-
+    padding: 1.5rem 9%;
+    background-color: var(--second-bg-color);
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
 }
 
-header:hover{
-    background-color:var(--bg-color);
-    opacity: 2;
-}
-
-.logo{
-font-size: 2.5rem;
-font-weight: 600;
-color: rgb(236, 236, 236);
-cursor: pointer;
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 
 
-.navebar p {
-
-font-size: 2rem;
-color: var(--text-color);
-font-weight: 500;
-margin-left: 3.5rem;
-transition: .3s;
-float: left;
-
+.navbar {
+    display: flex;
 }
 
+.navbar p {
+   
+    color: var(--text-color);
+    font-size: 20px;
+    margin-left: 3rem;
+    transition: 0.3s;
+}
 
-.navebar p:hover{
+.navbar p:hover {
     color: var(--main-color);
 }
 
-#menu-icon{
- font-size: 3.6rem;
-color: var(--text-color);
-cursor: pointer;
-display: none;
 
 
-} 
+.navbar .active p {
+    color: var(--main-color);
+}
+
+
+
+.menu-icon {
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-nav.open {
+    right: 0;
+}
+
+.mobile-nav p {
+ 
+    padding: 1.5rem;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.mobile-nav p:hover {
+    color: var(--main-color);
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}

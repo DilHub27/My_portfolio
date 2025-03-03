@@ -33,8 +33,8 @@ function App() {
 
 {!loding && (<Route exact path=''element={<HomePage/>}/>  )} 
 
-  <Route exact path='/HomePage'element={<HomePage/>} /> 
- 
+<Route exact path='/HomePage'element={<HomePage/>} /> 
+
   <Route path ='/AboutPage'element={<AboutPage/>}/>
   
   <Route path='/EducationalPage'element={<EducationalPage/>}/>
